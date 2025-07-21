@@ -1,0 +1,106 @@
+@use "../../assets/variables" as *;
+.achteurs-container,.vendeurs-container{
+    position: relative;
+    margin: 4%;
+    box-shadow: 5px 5px 20px  #00000034;
+    background-color: $background;
+    padding: 3%;
+    h3{
+        font-size: 3rem;
+        font-weight: 300;
+        text-decoration: underline;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .icons{
+       @include flex(20px);
+        justify-content: space-around;
+        flex-wrap: wrap;
+        position: relative;
+
+    }
+}
+.achteurs-container {
+  padding: 4rem 2rem;
+  background-color: #fdfdfd;
+  position: relative;
+    margin: 4%;
+    box-shadow: 5px 5px 20px  #00000034;
+    background-color: $background;
+    padding: 3%;
+
+  .section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .testimonials-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+
+  .testimonial-card {
+    border-radius: 1.5rem;
+    padding: 2rem;
+    width: 100%;
+    max-width: 540px;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .testimonial-image {
+      height: 80px;
+      object-fit: contain;
+      border-radius: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .testimonial-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      transition: color 0.3s ease;
+    }
+
+    .testimonial-text {
+      font-size: 1rem;
+      line-height: 1.6;
+      transition: color 0.3s ease;
+    }
+
+    &.light {
+      background-color: #f8f9ff;
+      color: #000;
+
+      &:hover {
+        background-color: #63585838;
+        color: white;
+
+        .testimonial-title,
+        .testimonial-text {
+          color: white;
+        }
+      }
+    }
+
+    &.dark {
+      background-color: #223a78;
+      color: white;
+
+      &:hover {
+        background-color: #f8f9ff;
+        color: #000;
+
+        .testimonial-title,
+        .testimonial-text {
+          color: #000;
+        }
+      }
+    }
+  }
+}

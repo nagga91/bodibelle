@@ -1,0 +1,36 @@
+@use "../../../assets/variables"as *;
+
+.descriptionBox{
+    @include flex(25px);
+    width: 48%;
+    height: 80px;
+    min-height:60px ;
+    min-width: 320px;
+    width: 450px;
+    .icon{
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 60px;
+        max-height: 60px;
+        height: 100%;
+        border-radius: 5px;
+      svg{
+        width: 50%;
+        height: 50%;
+      }
+    }
+    .text{
+        flex: 5;
+        h2{
+          font-size: 14px;
+
+        }
+        p{
+          color: $gray;
+          font-size: 10px;
+
+        }
+    }
+}

@@ -1,0 +1,38 @@
+@use "./assets/variables"as *;
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  font-family: "Lato", sans-serif;
+  max-width: 100%;}
+
+
+html{
+  font-size: 16px;
+  @media (min-height: 1000px) {
+  
+    font-size: 23px;
+  }
+}
+a {
+  text-decoration: none;
+}
+button{
+  background-color: rgba(80, 65, 188, 1);
+  width: 130px;
+  min-height: 40px;
+  color: white;
+  font-weight: 700;
+  outline: none;
+  border: 2px solid rgba(80, 65, 188, 1);
+  cursor: pointer;
+  transition: 0.2s;
+  &:hover{
+   scale: 1.05;
+   box-shadow: 1px 1px 5px rgba(79, 65, 188, 0.438);
+  }
+  &:active{
+    scale: 0.95;
+  }
+}

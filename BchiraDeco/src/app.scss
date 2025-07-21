@@ -1,0 +1,6 @@
+@use "./assets/variables"as *;
+.App-container{
+    position: relative;
+    z-index: 1;
+    background-color: $background;
+}

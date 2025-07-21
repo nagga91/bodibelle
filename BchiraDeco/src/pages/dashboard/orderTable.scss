@@ -1,0 +1,96 @@
+.table-container {
+    margin: 2rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+    overflow-x: auto;
+}
+
+.order-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 1000px;
+
+    th,
+    td {
+        padding: 14px 18px;
+        text-align: left;
+        border-bottom: 1px solid #f1f1f1;
+        font-size: 0.95rem;
+    }
+
+    thead {
+        background-color: #f8f8f8;
+        font-weight: 600;
+        color: #444;
+    }
+
+    .status-select {
+        padding: 6px 12px;
+        border: none;
+        border-radius: 20px;
+        font-weight: 600;
+        text-align: center;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        cursor: pointer;
+        outline: none;
+
+        &.pending {
+            background-color: #fff3cd;
+            color: #856404;
+        }
+
+        &.confirmed {
+            background-color: #d4edda;
+            color: #155724;
+        }
+
+        &.cancelled {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+
+        &:hover {
+            opacity: 0.9;
+        }
+    }
+
+    .actions {
+        display: flex;
+        gap: 10px;
+
+        .delete-btn {
+            background-color: #f8d7da;
+            border: none;
+            border-radius: 8px;
+            padding: 6px 10px;
+            font-size: 16px;
+            cursor: pointer;
+            color: #721c24;
+            transition: all 0.3s ease;
+
+            &:hover {
+                background-color: #dc3545;
+                color: white;
+                transform: scale(1.05);
+            }
+        }
+
+        .edit-btn {
+            background-color: #e0f0ff;
+            border: none;
+            border-radius: 8px;
+            padding: 6px 10px;
+            font-size: 16px;
+            cursor: pointer;
+            color: #007bff;
+            transition: all 0.3s ease;
+
+            &:hover {
+                background-color: #007bff;
+                color: white;
+                transform: scale(1.05);
+            }
+        }
+    }
+}

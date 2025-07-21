@@ -1,0 +1,36 @@
+@keyframes animationBar {
+    0% {
+      transform: rotateZ(0deg);
+    }
+    30% {
+      transform: rotateZ(-5deg);
+    }
+    50% {
+      transform: rotateZ(-2deg);
+    }
+    80% {
+      transform: rotateZ(3deg);
+    }
+    100% {
+      transform: rotateZ(0deg);
+    }
+  }
+  
+  @keyframes animationBar2 {
+    0% {
+      transform: rotateZ(0deg);
+    }
+    30% {
+      transform: rotateZ(-2deg);
+    }
+    50% {
+      transform: rotateZ(4deg);
+    }
+    80% {
+      transform: rotateZ(-3deg);
+    }
+    100% {
+      transform: rotateZ(0deg);
+    }
+  }
+  

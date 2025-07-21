@@ -1,0 +1,152 @@
+{
+  "welcome": "Bienvenue",
+  "login": "Se connecter",
+  "logo": "logo",
+  "home": "Accueil",
+  "about": "À propos",
+  "products": "Produits",
+  "contact": "Contact",
+  "back": "Retour",
+  "home_tagline": "Votre maison mérite du caractère.",
+  "intro":"Nous sommes votre showroom spécialisé en décoration d'intérieur, offrant une large gamme de produits pour sublimer votre espace. Que vous cherchiez une touche d'élégance avec nos stores vénitiens, une ambiance chaleureuse grâce à nos tapis Mouette et tapis couloirs, ou encore une modernité audacieuse avec nos papiers peints, nous avons tout pour répondre à vos envies. Pour les extérieurs, nous proposons également du gazon artificiel de haute qualité, parfait pour des espaces verts sans entretien. Notre mission ? Vous accompagner dans la création d'un intérieur unique, alliant esthétique, confort et personnalisation.",
+  "contact_us":"Contactez-nous pour plus d'informations.",
+  "nom":"Name",
+  "email":"Email",
+  "message":"Message",
+  "send":"Envoyer",
+  "services_title": "Nos Services",
+  "card_1_title": "Depannage et Deblocage",
+  "card_1_text": "Nous intervenons rapidement pour débloquer vos volets roulants grâce à une vérification des lames et du mécanisme d'enroulement.",
+  "card_2_title": "Reparation et Mise en Service",
+  "card_2_text": "Nos techniciens assurent le bon fonctionnement des systèmes de secours.",
+  "card_3_title": "Entretien",
+  "card_3_text": "Contrats de maintenance avec deux visites annuelles et dépannages gratuits.",
+  "testimonials_title": "Ils nous font confiance",
+  "testimonial1": "J’ai commandé une enseigne murale en bois personnalisée pour mon salon de thé. Le rendu est tout simplement sublime : bois brut, lettrage élégant et finitions impeccables. Mes clients adorent et moi aussi !",
+  "testimonial2": "Le miroir artisanal que j’ai reçu a transformé mon entrée. C’est à la fois une pièce décorative et pratique. Un service client à l’écoute et une livraison dans les délais !",
+  "name_abdallah": "Abdallah ben Abdallah",
+  "name_anwer": "Anwer Belgaied",
+ "cart_title": "🛒 Panier d'achat",
+  "cart_items_count": "Vous avez {{count}} article(s) dans votre panier.",
+  "cart_total": "Total : {{price}} DT",
+  
+  "form_title": "📋 Coordonnées",
+  "form_description": "Merci de remplir vos coordonnées pour le suivi de la commande. Si aucun retour après une semaine, contactez-nous : belldeco27@gmail.com",
+
+  "label_name": "Nom",
+  "placeholder_name": "Votre nom",
+
+  "label_lastname": "Prénom",
+  "placeholder_lastname": "Votre prénom",
+
+  "label_email": "Email",
+  "placeholder_email": "email@exemple.com",
+
+  "label_phone": "Téléphone",
+  "placeholder_phone": "Votre numéro de téléphone",
+
+  "label_address": "Adresse",
+  "placeholder_address": "Votre adresse complète",
+
+  "btn_submit": "✅ Passer la commande",
+  "btn_cancel": "❌ Annuler la commande",
+
+  "toast_cart_cleared": "🧺 Panier vidé avec succès !",
+  "login_title": "Connexion",
+  "login_subtitle": "Déverrouillez votre monde.",
+  "label_password": "Mot de passe",
+  "placeholder_password": "Entrez votre mot de passe",
+  "btn_login": "Se connecter",
+  "login_error_required_fields": "Tous les champs sont obligatoires",
+  "login_error_invalid_credentials": "Email ou mot de passe incorrect",
+    "dashboard_brand": "Bchira Deco",
+  "dashboard_nav_orders": "Commandes",
+  "dashboard_nav_categories": "Catégories",
+  "dashboard_nav_products": "Produits",
+  "dashboard_logout": "Se déconnecter",
+  "table": {
+    "no": "N°",
+    "fullName": "Nom complet",
+    "email": "Email",
+    "phone": "Téléphone",
+    "address": "Adresse",
+    "products": "Produits",
+    "totalPrice": "Prix total",
+    "status": "Statut",
+    "date": "Date",
+    "actions": "Actions",
+    "deletedProduct": "Produit supprimé"
+  },
+  "status": {
+    "pending": "En attente",
+    "confirmed": "Confirmée",
+    "cancelled": "Annulée"
+  },
+  "confirm": {
+    "deleteOrder": "Voulez-vous vraiment supprimer cette commande ?"
+  },
+  "errors": {
+    "fetchOrders": "Erreur chargement commandes",
+    "updateStatus": "Erreur mise à jour statut",
+    "deleteOrder": "Erreur suppression commande",
+    "deleteOrderAlert": "Erreur lors de la suppression"
+  },
+    "categories": {
+    "manage": "Gérer les catégories",
+    "namePlaceholder": "Nom de la catégorie",
+    "add": "Ajouter",
+    "edit": "Modifier",
+    "delete": "Supprimer",
+    "successAdd": "Catégorie ajoutée !",
+    "successUpdate": "Catégorie mise à jour !",
+    "successDelete": "Catégorie supprimée",
+    "errorDelete": "Erreur lors de la suppression",
+    "errorGeneral": "Erreur : {{message}}",
+     "title": "Nos catégories",
+  "subtitle": "Parcourir par",
+  "span": "catégorie"
+  },
+    "manage_products": "Gérer les produits",
+  "select_category": "Sélectionner une catégorie :",
+  "product_name": "Nom du produit",
+  "description": "Description",
+  "price": "Prix",
+  "dimensions": "Dimensions",
+  "colors": "Couleurs (séparées par des virgules)",
+  "images": "Images",
+  "add_product": "Ajouter Produit",
+  "edit_product": "Modifier Produit",
+  "edit": "✏️ Modifier",
+  "delete": "🗑️ Supprimer",
+  "error_loading_categories": "Erreur lors du chargement des catégories",
+  "error_loading_products": "Erreur lors du chargement des produits",
+  "select_category_first": "Veuillez sélectionner une catégorie",
+  "product_updated": "Produit mis à jour !",
+  "product_added": "Produit ajouté !",
+  "product_deleted": "Produit supprimé",
+  "error_deleting_product": "Erreur lors de la suppression",
+  "error_generic": "Erreur :",
+   "navigation": {
+    "backHome": "Retour"
+  },
+  "hero": {
+    "button": "Nos produits"
+  },
+  "sets": {
+    "title": "Bchira Deco"
+  },
+  "product": {
+    "addToCart": "Ajouter au panier"
+  },
+  "cart": {
+    "productAdded": "✅ Produit ajouté au panier !",
+    "errorAdd": "Erreur ajout panier !"
+  },
+  "currency": {
+    "dt": "DT"
+  },
+  "units": {
+    "cm": "cm"
+  }
+
+}

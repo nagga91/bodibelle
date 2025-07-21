@@ -1,0 +1,74 @@
+@use "../../assets/variables" as *;
+.consultez-container{
+
+    .text{
+        font-size: 2rem;
+        font-weight: 500;
+        width: fit-content;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 30px;
+        &::after{
+            content: "";
+            display: block;
+            width: 50%;
+            height: 5px;
+            background-color: $yellow;
+            margin: 0 auto;
+            border-radius: 5px;
+        }
+    }
+    .icons{
+        height: 150px;
+        min-height: 50px;
+        width: 100%;
+     
+        position: relative;
+        box-shadow: 5px 0 10px  #00000041;
+        background-color: $background;
+        @include flex(10px);
+        justify-content: space-around;
+
+        padding: 5px 50px;
+        align-items: center;
+        margin:  20px 0;
+        max-width: 100%;
+        @media (max-width: 800px) {
+            padding: 5px 0px;
+            height: 100px;
+        }
+        @media (max-width: 600px) {
+            padding: 5px 0px;
+            height: 70px;
+        }
+
+        div{
+            cursor: pointer;
+            flex-grow: 0;
+            text-align: center;
+            max-width: 150px;
+            flex:1;
+            position: relative;
+            border-radius: 5px;
+            flex: 1;
+            height:  100%;
+            padding: 10px;
+            border: 1px solid rgba(0, 0, 0, 0.274);
+            img{
+             height: 80%;
+            }
+            span{
+                font-weight: 700;
+                text-align: center;
+                display: block;
+                font-size: 0.8rem;
+                @media (max-width: 600px) {
+                    font-size: 0.5rem;
+                }
+            }
+        }
+        .active{
+            background-color: $yellow;
+        }
+    }
+}

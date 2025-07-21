@@ -1,0 +1,171 @@
+@use "../../assets/variables" as *;
+
+.order-container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  background-color: #f8f9fa;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+
+  .order {
+    flex: 1;
+    max-width: 600px;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+
+    h2 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: #343a40;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #495057;
+
+      .total {
+        color: $yellow;
+        font-weight: 700;
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  .order-form {
+    flex: 1;
+    max-width: 500px;
+    background-color: #ffffff;
+    color: #212529;
+    padding: 2rem;
+    border-radius: 0.75rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+
+    @media (max-width: 1024px) {
+      max-width: 100%;
+    }
+
+    @media (max-width: 700px) {
+      grid-template-columns: 1fr;
+    }
+
+    .formHead {
+      grid-column: 1 / -1;
+
+      h3 {
+        font-size: 1.4rem;
+        margin-bottom: 0.5rem;
+        color: #212529;
+      }
+
+      p {
+        font-size: 0.85rem;
+        color: #6c757d;
+      }
+
+      hr {
+        margin-top: 1rem;
+        border: none;
+        height: 2px;
+        background-color: $yellow;
+      }
+    }
+
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+      color: #343a40;
+    }
+
+    input {
+      width: 100%;
+      padding: 0.75rem;
+      border-radius: 0.375rem;
+      border: 1px solid #ced4da;
+      background-color: #f8f9fa;
+      color: #212529;
+    }
+
+    .formvalidation {
+      grid-column: 1 / -1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+
+      hr {
+        height: 3px;
+        width: 80%;
+        background-color: $yellow;
+        border: none;
+      }
+
+      div {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+
+        .btn-order,
+        .btn-cancel {
+          padding: 0.75rem 1.5rem;
+          border-radius: 0.375rem;
+          border: none;
+          cursor: pointer;
+          font-weight: 600;
+          transition: background-color 0.3s ease;
+        }
+
+        .btn-order {
+          background-color: $yellow;
+          color: #212529;
+
+          &:hover {
+            background-color: darken($yellow, 7%);
+          }
+        }
+
+        .btn-cancel {
+          background-color: #dee2e6;
+          color: #212529;
+
+          &:hover {
+            background-color: #ced4da;
+          }
+        }
+      }
+    }
+  }
+
+  .toast-above-button {
+    position: absolute !important;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #28a745;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    z-index: 9999;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .toast-above-button.toastify__toast--error {
+    background-color: #dc3545;
+  }
+
+  .toast-above-button.toastify__toast--info {
+    background-color: #17a2b8;
+  }
+
+}

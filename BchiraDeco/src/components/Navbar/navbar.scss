@@ -1,0 +1,156 @@
+@use "_animations.scss";
+@use "_navbarMediaQueries.scss";
+@use "../../assets/variables" as *;
+
+.navbar-container {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 1rem 2.5rem;
+  z-index: 2000;
+  background-color: $background;
+  border-bottom: 1px solid rgba(110, 110, 110, 0.301);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.219);
+  transition: all 0.5s ease-in-out;
+  h2{
+  transition: all 0.5s ease-in-out;
+  position: absolute;
+  left: 10%;
+}
+h3{
+  float: right;
+}
+
+  img {
+    height: inherit;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+  
+    ul {
+      display: flex;
+      list-style-type: none;
+      gap: 2rem;
+      color: $white;
+      font-variant: small-caps;
+      font-weight: 600;
+      a{
+        text-decoration: none;
+     
+      li {
+       cursor: pointer;
+        color: $black;
+    
+        text-shadow: none;
+        position: relative;
+        &::before {
+          position: absolute;
+          width: 100%;
+          height: 0px;
+          bottom: 0;
+          left: 0;
+          overflow: hidden;
+          background-color: $yellow;
+          content: "";
+          transition: all 0.3s ease-out;
+         
+          opacity: 1;
+        
+          
+        }
+        &:hover{
+          &::before{
+                    height: 100%;
+
+            opacity: 0.3;
+          }
+        }}} }
+  }
+  .navbar-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  left: 1rem;
+  display: flex;
+  align-items: center;
+  margin-left: 2rem;
+
+  img {
+    height: 50px;
+    width: auto;
+     @media screen and (max-width: 600px) {
+      width: 80px;
+      height: 80px;
+      margin-left: 0;
+      left: 0;
+  }
+  }
+}
+
+.language-switch{
+  @media screen and (max-width: 600px) {
+      display: flex;
+      gap: 0.5rem;
+  }
+}
+
+
+.language-switch button {
+  margin: 0 5px;
+  padding: 4px ;
+  font-size: 14px;
+  width: 80px;
+  cursor: pointer;
+  background-color: $yellow;
+  color: $white;
+  border: none;
+  border-radius: 100px;
+  transition: background-color 0.3s ease;
+  &:hover {
+    background-color: darken($yellow, 10%);
+  }
+}
+
+  .shopping-card{
+    position: relative;
+    p{
+      position: absolute;
+      top: 0;
+      right: 20px;
+      width: 20px;
+      height: 20px;
+      background-color: $yellow;
+      color: $white;
+      font-size: 0.8rem;
+      text-align: center;
+      border-radius: 50%;
+      @media (max-width: 600px) {
+        width: 25px;
+        height: 25px;
+        font-size: 1rem;
+      }
+    }
+    img{
+      cursor: pointer;
+      width: 25px;
+      @media (max-width: 600px) {
+        width: 35px;
+      }
+    }
+  }
+  @media screen and (max-width: 400px) {
+    width: 100%;
+    padding: 0;
+    justify-content: center;
+  }
+}

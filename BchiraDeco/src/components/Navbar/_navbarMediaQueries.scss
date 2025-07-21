@@ -1,0 +1,78 @@
+@use "../../assets/variables" as *;
+@media (max-width: 780px) {
+  .navbar-container {
+    nav {
+      .hamburger-menu {
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        z-index: 200;
+        position: relative;
+        .bar {
+          width: 40px;
+          height: 5px;
+          border-radius: 2px;
+          background-color: $black;
+          transition: 0.5s;
+          position: relative;
+          transition: 0.5s;
+          &::after,
+          &::before {
+            content: "";
+            position: absolute;
+            width: inherit;
+            height: inherit;
+            background-color: $black;
+            transition: 0.5s;
+          }
+          &::before {
+            transform: translateY(-9px);
+          }
+
+          &::after {
+            transform: translateY(9px);
+          }
+          &.open {
+            transform: rotate(360deg);
+            background-color: transparent;
+          }
+          &.open::before {
+            transform: rotate(45deg) translateY(0);
+          }
+          &.open::after {
+            transform: rotate(-45deg) translateY(0);
+          }
+        }
+      }
+      .ulclosed,
+      .ulopen {
+        position: fixed;
+        height: calc(100vh - 60px);
+        top: 60px;
+        width: 80%;
+        color: $black;
+        background-image: linear-gradient(to top right, rgba(245, 222, 179, 0.336), rgba(15, 11, 4, 0.344)); ;
+        backdrop-filter: blur(7px);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10%;
+        transition: all 0.7s ease;
+        box-shadow: -1px -1px 7px rgba(0, 0, 0, 0.459);
+        li{
+            font-size: 2rem;
+        }
+      }
+      ul.ulclosed {
+        right: -99%;
+      }
+      ul.ulopen {
+        right: 0;
+      }
+
+    }
+  }
+}
