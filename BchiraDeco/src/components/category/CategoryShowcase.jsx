@@ -11,7 +11,7 @@ const CategoryShowcase = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const res = await api.get("/api/categories");
+      const res = await api.get("/categories");
       setCategories(res.data);
     };
     fetchData();
