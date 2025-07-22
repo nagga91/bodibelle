@@ -3,6 +3,7 @@ import axios from "axios";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import "./categoryShowcase.scss";
+import api from "../../utils/api";
 
 const CategoryShowcase = () => {
   const [categories, setCategories] = useState([]);
@@ -10,7 +11,7 @@ const CategoryShowcase = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const res = await axios.get("http://localhost:8000/api/categories");
+      const res = await api.get("/api/categories");
       setCategories(res.data);
     };
     fetchData();
@@ -26,7 +27,7 @@ const CategoryShowcase = () => {
           <Link to={`/products/category/${cat._id}`} key={cat._id} className="category-card">
             {cat.photos[0] && (
               <img
-                src={`http://localhost:8000/uploads/${cat.photos[0]}`}
+                src={`${process.env.REACT_APP_BASE_URL}/uploads/${cat.photos[0]}`}
                 alt={cat.name}
               />
             )}
