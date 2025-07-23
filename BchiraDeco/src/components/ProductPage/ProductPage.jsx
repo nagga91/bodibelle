@@ -124,7 +124,7 @@ const ProductPage = () => {
             <div className="product-card" key={product._id}>
               <div className="product-image">
                 <img
-                  src={`${process.env.REACT_APP_BASE_URL}/uploads/${product.photos[0]}`}
+                  src={`${process.env.UPLOADS}/uploads/${product.photos[0]}`}
                   alt={product.name}
                 />
               </div>

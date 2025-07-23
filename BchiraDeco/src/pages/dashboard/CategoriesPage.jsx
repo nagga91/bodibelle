@@ -120,10 +120,10 @@ const CategoriesPage = () => {
               {cat.photos.map((p, i) => (
                 <img
                   key={i}
-                  src={`http://localhost:8000/uploads/${p}`}
+                  src={`${process.env.UPLOADS}/uploads/${p}`}
                   alt={cat.name}
                   onClick={() => {
-                    setLightboxImage(`http://localhost:8000/uploads/${p}`);
+                    setLightboxImage(`${process.env.UPLOADS}/uploads/${p}`);
                     setLightboxOpen(true);
                   }}
                 />

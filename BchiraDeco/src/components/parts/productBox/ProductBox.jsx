@@ -26,7 +26,7 @@ function ProductBox({ product }) {
 
     <div className="product-box">
       <img
-                  src={`${process.env.REACT_APP_BASE_URL}/uploads/${product.photos[0]}`}
+                  src={`${process.env.UPLOADS}/uploads/${product.photos[0]}`}
                   alt={product.name}
                 />
       

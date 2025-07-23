@@ -71,12 +71,12 @@ function Navbar({ open, setOpen, setNav }) {
               <a onClick={() => setOpen(false)} href="#contact">
                 <motion.li variants={objectAni}>&nbsp;{t("contact")}&nbsp;</motion.li>
               </a>
-               <motion.div className="shopping-card" variants={objectAni}>
+               {/* <motion.div className="shopping-card" variants={objectAni}>
               <Link to={card.length > 0 ? "/order" : null}>
                 <p>{card.length}</p>
                 <img src={cardIcon} alt="" />
               </Link>
-            </motion.div>
+            </motion.div> */}
             </ul>
              
                <div className="language-switch ">

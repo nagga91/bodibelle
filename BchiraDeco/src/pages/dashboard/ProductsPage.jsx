@@ -228,10 +228,10 @@ const ProductsPage = () => {
               {product.photos.map((p, i) => (
                 <img
                   key={i}
-                  src={`${process.env.REACT_APP_BASE_URL}/uploads/${p}`}
+                  src={`${process.env.UPLOADS}/uploads/${p}`}
                   alt={product.name}
                   onClick={() => {
-                    setLightboxImage(`${process.env.REACT_APP_BASE_URL}/uploads/${p}`);
+                    setLightboxImage(`${process.env.UPLOADS}/uploads/${p}`);
                     setLightboxOpen(true);
                   }}
                 />
