@@ -15,6 +15,7 @@ const ProductPage = () => {
   const [cartCount, setCartCount] = useState(0);
   const { t } = useTranslation();
 
+
   useEffect(() => {
     const fetchCategories = async () => {
       try {
@@ -124,7 +125,7 @@ const ProductPage = () => {
             <div className="product-card" key={product._id}>
               <div className="product-image">
                 <img
-                  src={`${process.env.UPLOADS}/uploads/${product.photos[0]}`}
+                  src={`${process.env.REACT_APP_UPLOADS}/uploads/${product.photos[0]}`}
                   alt={product.name}
                 />
               </div>
