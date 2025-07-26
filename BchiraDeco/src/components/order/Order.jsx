@@ -158,7 +158,7 @@ function Order() {
             />
           </div>
 
-          <div className="emailInput">
+          {/* <div className="emailInput">
             <label htmlFor="email">{t("label_email")}</label>
             <input
               type="email"
@@ -166,7 +166,7 @@ function Order() {
               placeholder={t("placeholder_email")}
               onChange={(e) => setUser({ ...user, email: e.target.value })}
             />
-          </div>
+          </div> */}
 
           <div className="phoneInput">
             <label htmlFor="phone">{t("label_phone")}</label>
