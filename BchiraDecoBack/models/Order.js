@@ -7,7 +7,7 @@ const orderSchema = new mongoose.Schema({
   clientInfo: {
     name: { type: String, required: true },
     lastName: { type: String, required: true },
-    email: { type: String, required: true },
+    email: { type: String },
     phone: { type: String, required: true },
     address: { type: String, required: true }
   },
